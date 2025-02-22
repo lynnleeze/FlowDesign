@@ -20,7 +20,7 @@ from diffab.utils.transforms import *
 from diffab.utils.inference import *
 
 from torch_ema import ExponentialMovingAverage
-torch.cuda.set_device(4)
+#torch.cuda.set_device(4) # Set GPU device ，because we use Slurm to submit jobs, we don't need to set GPU device here
 
 def create_data_variants(config, structure_factory, pkl_dict):
     structure = structure_factory()
